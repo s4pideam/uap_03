@@ -1,0 +1,29 @@
+// Parse-Tree
+digraph "Parse-Tree" {
+	bgcolor="#282a36"
+	node [color=white fontcolor=white]
+	edge [color=white fontcolor=white]
+	node_9 [label=if fontcolor="#2196f3" shape=diamond]
+	node_6 [label="OP: ||" fontcolor="#ff5555" shape=rect]
+	node_2 [label="OP: >" fontcolor="#ff5555" shape=rect]
+	node_0 [label="CONST: 1" fontcolor="#bd93f9"]
+	node_2 -> node_0
+	node_1 [label="CONST: 2" fontcolor="#bd93f9"]
+	node_2 -> node_1
+	node_6 -> node_2
+	node_5 [label="OP: <" fontcolor="#ff5555" shape=rect]
+	node_3 [label="CONST: 3" fontcolor="#bd93f9"]
+	node_5 -> node_3
+	node_4 [label="CONST: 5" fontcolor="#bd93f9"]
+	node_5 -> node_4
+	node_6 -> node_5
+	node_9t [label=then fontcolor="#2196f3"]
+	node_9e [label=else fontcolor="#2196f3"]
+	node_9 -> node_6
+	node_9 -> node_9t
+	node_9 -> node_9e
+	node_7 [label="CONST: 1" fontcolor="#bd93f9"]
+	node_9t -> node_7
+	node_8 [label="CONST: 0" fontcolor="#bd93f9"]
+	node_9e -> node_8
+}
